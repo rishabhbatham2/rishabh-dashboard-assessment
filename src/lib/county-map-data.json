@@ -1,0 +1,46 @@
+{
+  "countyData": [
+    {
+      "county": "King",
+      "vehicles": 79185,
+      "lat": 47.5480,
+      "lng": -121.9836
+    },
+    {
+      "county": "Snohomish",
+      "vehicles": 18273,
+      "lat": 48.0335,
+      "lng": -121.8335
+    },
+    {
+      "county": "Pierce",
+      "vehicles": 14705,
+      "lat": 47.0429,
+      "lng": -122.2429
+    },
+    {
+      "county": "Clark",
+      "vehicles": 9324,
+      "lat": 45.7445,
+      "lng": -122.5143
+    },
+    {
+      "county": "Thurston",
+      "vehicles": 6253,
+      "lat": 46.9015,
+      "lng": -122.8052
+    },
+    {
+      "county": "Whatcom",
+      "vehicles": 5163,
+      "lat": 48.8473,
+      "lng": -122.0911
+    },
+    {
+      "county": "Kitsap",
+      "vehicles": 6845,
+      "lat": 47.6342,
+      "lng": -122.6413
+    }
+  ]
+}

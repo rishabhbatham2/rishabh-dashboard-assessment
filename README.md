@@ -1,47 +1,105 @@
-# MapUp - Analytics Dashboard Assessment
+Overview
 
-## Overview
+This project is a fully interactive analytics dashboard built to analyze and visualize insights from the Electric Vehicle Population dataset.
+The dashboard is designed to help users quickly understand EV adoption patterns, distribution, and characteristics through metrics, charts, maps, and tabular exploration.
 
-The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills. Feel free to use any tech stack you want to create the dashboard.
+The focus was on clarity, usability, and insight-driven design, rather than just displaying raw data.
 
-### We encourage the use of AI and LLM tools for this assessment! However, you must understand what you're building and be able to explain your implementation decisions.
+Key metrics at a glance
 
-## Dataset
+The dashboard provides high-level summary metrics, including:
 
-The Electric Vehicle Population dataset is available in the [Electric Vehicle Population Data (CSV)](./data-to-visualize/Electric_Vehicle_Population_Data.csv) within this repository, for more information about the dataset visit [kaggle dataset](https://www.kaggle.com/datasets/willianoliveiragibin/electric-vehicle-population).
+Total Vehicles – total number of registered electric vehicles
 
-**Note:** We've reduced the dataset in the repository to keep the data size small in the frontend bundle.
+Unique Models – count of distinct EV models
 
-## Tasks
+Unique Counties – number of counties represented
 
-### Dashboard Creation:
+Legislative Districts – total districts with EV registrations
 
-- Create a frontend dashboard that presents key insights from the dataset.
-- Design the dashboard to effectively communicate important metrics and visualizations.
-- Include visual representations such as charts, graphs, or tables to showcase trends and relationships in the data.
-- Ensure the dashboard is user-friendly and intuitive for exploring the dataset.
+Postal Codes – total unique postal codes in the dataset
 
-### Deployment:
+These metrics give an immediate snapshot of the dataset’s scale and coverage.
 
-- Deploy your frontend dashboard to a hosting platform of your choice.
-- Make sure the dashboard is publicly accessible.
+Visual analytics & insights
 
-## Evaluation Criteria
+The dashboard includes multiple visualizations to explore trends and distributions:
 
-Your submission will be evaluated based on:
+Vehicles Registered by Year
+A time-series chart showing EV adoption growth from early years to recent registrations.
 
-- **Analytical Depth:** The depth of your analysis and insights derived from the dataset.
-- **Dashboard Design:** Clarity, aesthetics, and usability of the frontend dashboard.
-- **Insightfulness:** Effectiveness in conveying key insights about electric vehicles.
+Vehicles by Legislative District (Top 15)
+A ranked bar chart highlighting districts with the highest number of EV registrations.
 
-## Submission Guidelines
+Top Vehicle Makes
+Distribution of the most common EV manufacturers, highlighting market dominance and diversity.
 
-- Fork this repository to your GitHub account.
-- Complete your analysis and create the frontend dashboard.
-- Deploy the dashboard to a hosting platform.
-- Update this [README.md](README.md) file with the URL to your live dashboard.
-- **Repository Access:** Keep your repository private to avoid visibility by other candidates. Add the following email addresses as collaborators to the repository, these are our internal emails and will be evaluating your assessment:
-  - vedantp@mapup.ai
-  - ajayap@mapup.ai
-  - atharvd@mapup.ai
-- Finally, please fill out the google form that you received via email to submit the assessment for review.
+Top Vehicle Models
+Breakdown of the most frequently registered EV models.
+
+Electric Range Distribution
+Vehicles grouped into electric range bins (in miles) to understand real-world usability trends.
+
+
+
+Base MSRP Distribution
+Price range distribution based on manufacturer’s suggested retail price, showing affordability spread.
+
+Geospatial analysis
+
+To add spatial context, the dashboard includes interactive maps:
+
+EV Locations Map
+A point map where each dot represents an individual EV registration.
+
+EV Registrations by County (Choropleth Map)
+A county-level heatmap visualizing EV concentration across Washington state.
+
+These maps help identify geographic clusters and regional adoption patterns.
+
+Detailed data exploration
+
+Transactions Table
+A paginated, searchable table displaying individual EV records with details such as:
+
+Make & model
+
+Model year & EV type (BEV / PHEV)
+
+County and city
+
+Electric range
+
+This allows users to drill down from high-level trends to individual records.
+
+User experience features
+
+Theme toggle (light/dark mode)
+
+Customizable layout
+
+Responsive design for different screen sizes
+
+Intuitive navigation and filtering for smooth exploration
+
+Tech stack
+
+Next.js – frontend framework
+
+React – component-based UI
+
+
+
+Leaflet + OpenStreetMap – for interactive maps
+
+CSV-based data processing – lightweight frontend data handling
+
+Modern UI styling – clean, dashboard-style interface
+
+
+
+Deployment
+
+The dashboard is deployed and publicly accessible:
+
+👉 Live Dashboard URL:

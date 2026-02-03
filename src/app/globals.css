@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 6% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 6% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 6% 10%;
+    --primary: 250 66% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 6% 10%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 40%;
+    --accent: 45 95% 51%;
+    --accent-foreground: 240 6% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 5% 90%;
+    --input: 240 5% 96%;
+    --ring: 250 66% 56%;
+    --chart-1: 210 90% 70%;
+    --chart-2: 180 80% 60%;
+    --chart-3: 240 6% 17%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 240 6% 17%;
+    --sidebar-foreground: 240 5% 95%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 240 6% 17%;
+    --sidebar-accent: 240 4% 25%;
+    --sidebar-accent-foreground: 240 5% 95%;
+    --sidebar-border: 240 4% 25%;
+    --sidebar-ring: 45 95% 51%;
+  }
+  .dark {
+    --background: 240 5% 8%;
+    --foreground: 240 5% 95%;
+    --card: 240 6% 12%;
+    --card-foreground: 240 5% 95%;
+    --popover: 240 6% 10%;
+    --popover-foreground: 240 5% 95%;
+    --primary: 250 66% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4% 15%;
+    --secondary-foreground: 240 5% 95%;
+    --muted: 240 4% 15%;
+    --muted-foreground: 240 4% 60%;
+    --accent: 45 95% 51%;
+    --accent-foreground: 240 6% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 4% 20%;
+    --input: 240 4% 18%;
+    --ring: 250 66% 56%;
+    --chart-1: 210 90% 70%;
+    --chart-2: 180 80% 60%;
+    --chart-3: 240 6% 17%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 6% 10%;
+    --sidebar-foreground: 240 5% 95%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 240 6% 10%;
+    --sidebar-accent: 240 4% 25%;
+    --sidebar-accent-foreground: 240 5% 95%;
+    --sidebar-border: 240 4% 20%;
+    --sidebar-ring: 45 95% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .leaflet-tooltip {
+    @apply bg-background text-foreground rounded-md border border-border p-2 text-xs shadow-lg;
+  }
+  .leaflet-tooltip-top:before,
+  .leaflet-tooltip-bottom:before,
+  .leaflet-tooltip-left:before,
+  .leaflet-tooltip-right:before {
+    @apply hidden;
+  }
+
+  .info.legend {
+    @apply bg-background/80 text-foreground p-2 rounded-md shadow-md backdrop-blur-sm;
+    line-height: 18px;
+  }
+  .info.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.9;
+    border: 1px solid hsl(var(--border));
+  }
+}

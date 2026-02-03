@@ -1,0 +1,16 @@
+id,date,product,category,amount,customer,region
+txn_1,2024-01-15,Laptop,Electronics,1200,Alice,North
+txn_2,2024-01-16,Mouse,Electronics,25,Bob,South
+txn_3,2024-02-10,Keyboard,Electronics,75,Charlie,East
+txn_4,2024-02-12,Desk Chair,Furniture,150,Alice,North
+txn_5,2024-03-05,Monitor,Electronics,300,David,West
+txn_6,2024-03-08,Desk,Furniture,400,Bob,South
+txn_7,2024-04-20,Webcam,Electronics,50,Eve,North
+txn_8,2024-04-22,Notebook,Office Supplies,10,Charlie,East
+txn_9,2024-05-18,Pen Pack,Office Supplies,5,Frank,West
+txn_10,2024-05-21,Printer,Electronics,250,Grace,South
+txn_11,2024-06-01,Standing Desk,Furniture,600,Alice,North
+txn_12,2024-06-05,Headphones,Electronics,120,Heidi,East
+txn_13,2024-07-11,Filing Cabinet,Furniture,220,Bob,South
+txn_14,2024-07-14,Stapler,Office Supplies,8,Ivan,West
+txn_15,2024-08-02,External Hard Drive,Electronics,90,Judy,North
