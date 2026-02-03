@@ -102,4 +102,4 @@ Deployment
 
 The dashboard is deployed and publicly accessible:
 
-👉 Live Dashboard URL:
+👉 Live Dashboard URL: https://demosubmit.vercel.app
